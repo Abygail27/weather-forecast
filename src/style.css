@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    padding-top: 5px;
+}
+
+.h3{
+    padding-bottom: 30px;
+    align-content: center;
+  
+}
+.radio{
+    display: inline-block;
+}
+
+#w-change-btn{
+    margin: 30px;
+}
+

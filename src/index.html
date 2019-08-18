@@ -1,0 +1,84 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Weather App</title>
+        <link rel = "stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+        <link rel = "stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container p-4">
+            <div class="row">
+                <div class = "col-md-6 mx-auto text-center">
+                    <div class = "card"> 
+                        <div class = "card-body">
+                            <h1 id = "weather-location" class = "h3">Consulta Clima</h1>
+                            
+                                <div class = "form-group">
+                                     <div class="radio">
+                                        <label><input type="radio" name="optradio" value = "new york" onclick="handleClick(this)">New York</label>
+                                     </div>
+                                    
+                                    <div id="weather-options">
+                             <div class="radio">
+                                        <label><input type="radio" name="optradio" value = "chicago" onclick="handleClick(this)">Chicago</label>
+                                     </div>
+                                     <div class="radio disabled">
+                                       <label><input type="radio" name="optradio" value = "london" checked onclick="handleClick(this)">London</label>
+                                     </div>
+                                     <div class="radio">
+                                       <label><input type="radio" name="optradio" value = "sidney" onclick="handleClick(this)">Sidney</label>
+                                     </div>
+                                     <div class="radio">
+                                       <label><input type="radio" name="optradio" value = "seattle" onclick="handleClick(this)">Seattle</label>
+                                     </div>
+                                     <div class="radio disabled">
+                                      <label><input type="radio" name="optradio" value = "tokyo" onclick="handleClick(this)">Tokyo</label>
+                                     </div>
+                                        <div class="radio">
+                                      <label><input type="radio" name="optradio" value = "hong kong" onclick="handleClick(this)">Hong Kong</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                     <label><input type="radio" name="optradio" value = "buenos aires" onclick="handleClick(this)">Buenos Aires</label>
+                                    </div>
+                                </div>
+                            
+                                    <div class = "from-group">
+                                        <button class = "btn btn-dark btn-dark" id = "displayRadioValue">
+                                          Buscar
+                                        </button>
+                                    </div>
+                        </div>
+                         
+                    </div>
+                   
+                        <div class = "card-body">
+                            <form id = "w-form"
+                                <div class = "form-group">
+                            <ul class = "list-group-item">
+                                
+                                <h1 id = "city-name" class = "h3"></h1>
+                                
+                                 Weather: <li id = "weather-city" class = "list-group-item"></li>
+                                 Temperature: <li id = "weather-temperature" class = "list-group-item"></li>
+                                 Wind Speed: <li id = "weather-speed" class = "list-group-item"></li>
+                                 City Coordinates: <li id = "weather-cor" class = "list-group-item"></li><li id = "weather-cor-second" class = "list-group-item"></li>
+
+                                                    
+                            </ul>
+
+                               </div>
+                
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type = "text/javascript" src = "index.js"></script>
+         <script type = "text/javascript" src = "weather.js"></script>
+    </body>
+    </html>
