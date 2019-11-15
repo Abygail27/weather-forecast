@@ -10,74 +10,64 @@
     </head>
 
     <body>
-        <div class="container p-4">
-            <div class="row">
-                <div class = "col-md-6 mx-auto text-center">
-                    <div class = "card"> 
-                        <div class = "card-body">
-                            <h1 id = "weather-location" class = "h3">Consulta Clima</h1>
-                            
-                                <div class = "form-group">
-                                     <div class="radio">
-                                        <label><input type="radio" name="optradio" value = "new york" onclick="handleClick(this)">New York</label>
-                                     </div>
-                                    
-                                    <div id="weather-options">
-                             <div class="radio">
-                                        <label><input type="radio" name="optradio" value = "chicago" onclick="handleClick(this)">Chicago</label>
-                                     </div>
-                                     <div class="radio disabled">
-                                       <label><input type="radio" name="optradio" value = "london" checked onclick="handleClick(this)">London</label>
-                                     </div>
-                                     <div class="radio">
-                                       <label><input type="radio" name="optradio" value = "sidney" onclick="handleClick(this)">Sidney</label>
-                                     </div>
-                                     <div class="radio">
-                                       <label><input type="radio" name="optradio" value = "seattle" onclick="handleClick(this)">Seattle</label>
-                                     </div>
-                                     <div class="radio disabled">
-                                      <label><input type="radio" name="optradio" value = "tokyo" onclick="handleClick(this)">Tokyo</label>
-                                     </div>
-                                        <div class="radio">
-                                      <label><input type="radio" name="optradio" value = "hong kong" onclick="handleClick(this)">Hong Kong</label>
+
+                          
+                    
+
+                           
+
+                              <div class="split left">
+                                <div class="centered">
+                                 
+                                
+                                  <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      Select a city
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">New York</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Chicago</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">London</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Sidney</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Seattle</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Tokyo</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Hong Kong</a>
+                                      <a class="dropdown-item" name="optradio" value = "new york" href="#">Buenos Aires</a>
+                                      
                                     </div>
-                                    <div class="radio disabled">
-                                     <label><input type="radio" name="optradio" value = "buenos aires" onclick="handleClick(this)">Buenos Aires</label>
-                                    </div>
-                                </div>
-                            
                                     <div class = "from-group">
-                                        <button class = "btn btn-dark btn-dark" id = "displayRadioValue">
-                                          Buscar
+                                        <button class = "btn btn-dark btn-dark mt-5" id = "displayRadioValue">
+                                          Search
                                         </button>
                                     </div>
-                        </div>
-                         
-                    </div>
-                   
-                        <div class = "card-body">
-                            <form id = "w-form"
-                                <div class = "form-group">
-                            <ul class = "list-group-item">
-                                
-                                <h1 id = "city-name" class = "h3"></h1>
-                                
-                                 Weather: <li id = "weather-city" class = "list-group-item"></li>
-                                 Temperature: <li id = "weather-temperature" class = "list-group-item"></li>
-                                 Wind Speed: <li id = "weather-speed" class = "list-group-item"></li>
-                                 City Coordinates: <li id = "weather-cor" class = "list-group-item"></li><li id = "weather-cor-second" class = "list-group-item"></li>
+                                  </div>
+                                </div>
+                              </div>
+                              
+                              <div class="split right">
+                                <div class="centered">
+                                    <div class = "card-body">
+                                        <form id = "w-form"
+                                            <div class = "form-group">
+                                        <ul class = "list-group-item">
+                                            
+                                            <h1 id = "city-name" class = "h3"></h1>
+                                            
+                                             Weather: <li id = "weather-city" class = "list-group-item"></li>
+                                             Temperature: <li id = "weather-temperature" class = "list-group-item"></li>
+                                             Wind Speed: <li id = "weather-speed" class = "list-group-item"></li>
+                                             City Coordinates: <li id = "weather-cor" class = "list-group-item"></li><li id = "weather-cor-second" class = "list-group-item"></li>
+                                        </div>                
+                                        </ul>
+            
+                                           </div>
+                            
+                                </div>
+                              </div>
 
-                                                    
-                            </ul>
-
-                               </div>
-                
-                       
-                    </div>
-                </div>
-            </div>
-        </div>
-
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type = "text/javascript" src = "index.js"></script>
          <script type = "text/javascript" src = "weather.js"></script>
     </body>

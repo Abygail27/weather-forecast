@@ -32,7 +32,7 @@ window.onload = function() {
 
    var celcius = Math.round(parseFloat(d.main.temp)-273.15);
    
-   document.getElementById( 'city-name').innerHTML = 'nombre de la ciudad:<br><br>' + d.name;
+   document.getElementById( 'city-name').innerHTML = 'City weather forecast:<br><br>' + d.name;
    document.getElementById('weather-city').innerHTML = d.weather[0].description;
    document.getElementById('weather-temperature').innerHTML = celcius + '&deg;';
    document.getElementById('weather-speed').innerHTML = d.wind.speed; 
